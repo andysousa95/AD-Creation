@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitar Acesso para Outro Usuário</title>
+    <link rel="stylesheet" href="solicitar-outros.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Solicitar Acesso para Outro Usuário</h2>
+
+    <!-- BUSCA USUÁRIO -->
+    <div class="card">
+        <label>Digite o usuário da pessoa:</label>
+        <input type="text" id="usuarioBusca" placeholder="ex: joao.silva">
+        <button onclick="buscarUsuario()">Buscar</button>
+    </div>
+
+    <!-- FORM NOVO USUÁRIO -->
+    <div id="novoUsuario" class="card hidden">
+
+        <h3>Novo colaborador</h3>
+
+        <input type="text" id="nome" placeholder="Nome completo">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="usuario" placeholder="Usuário">
+
+    </div>
+
+    <!-- ACESSOS -->
+    <div id="acessosContainer" class="card hidden">
+        <h3>Selecione os acessos</h3>
+        <div id="listaAcessos"></div>
+        <button class="btn-confirmar">Solicitar Acessos</button>
+    </div>
+
+    <button class="btn-voltar" onclick="voltar()">Voltar</button>
+
+</div>
+
+<script src="solicitar-outros.js"></script>
+</body>
+</html>

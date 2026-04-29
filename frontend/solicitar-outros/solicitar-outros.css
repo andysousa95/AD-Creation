@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 500px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.btn-confirmar {
+    background-color: #28a745;
+}
+
+.btn-confirmar:hover {
+    background-color: #1e7e34;
+}
+
+.btn-voltar {
+    background-color: #6c757d;
+}
+
+.btn-voltar:hover {
+    background-color: #5a6268;
+}
+
+/* LISTA DE ACESSOS */
+
+#listaAcessos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.acesso-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #003366, #0055A4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container principal */
+
+.choice-container {
+    background: #ffffff;
+    width: 500px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Título */
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+/* Grid de opções */
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Cards */
+
+.choice-card {
+    background: #f7f9fc;
+    border-radius: 12px;
+    padding: 30px 20px;
+    cursor: pointer;
+    transition: 0.25s;
+    border: 1px solid #e5e5e5;
+}
+
+.choice-card h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.choice-card p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Hover */
+
+.choice-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-color: #0055A4;
+}
+
+/* Botão voltar */
+
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-weight: 600;
+
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+.back-btn:hover {
+    background: linear-gradient(90deg, #004080, #00264d);
+}
+
+/* animação */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
